@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/usernameFill"
+        android:layout_marginLeft="10dp"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/usernameFill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Username"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Username"
+        android:layout_alignBaseline="@id/passwordFill"
+        android:layout_marginLeft="10dp"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/passwordFill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameFill"
+        android:layout_toRightOf="@id/Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <view
+        android:id="@+id/Loginview"
+        class="edu.msu.cse476.cloudhatter.LogInView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordFill" />
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/usernameFill"
+        android:onClick="onLogin"
+        android:text="@string/Login" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logIn"
+        android:layout_toRightOf="@id/passwordFill"
+        android:onClick="onSignup"
+        android:text="@string/SignUp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordFill"
+        android:layout_toRightOf="@id/Password"
+        android:text="@string/RememberMe" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "664339452430",
+    "project_id": "project-2-75e8e",
+    "storage_bucket": "project-2-75e8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664339452430:android:3d493687a49958f0cee25f",
+        "android_client_info": {
+          "package_name": "edu.msu.cse476.cloudhatter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664339452430-1hlgs5h2l5l832hfpctc9734pli7fh27.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.msu.cse476.cloudhatter",
+            "certificate_hash": "8179d5d030e9d80fbf4378ad37b2879b0089cee3"
+          }
+        },
+        {
+          "client_id": "664339452430-4btpru5nu8dpop41qtrltcvea9ep74h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIfyOJWk7fKWItDQpOr1fZ3raK02wmgLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664339452430-4btpru5nu8dpop41qtrltcvea9ep74h4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/CreateID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/SGusernameFill"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/SGusernameFill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Pass2Fill"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Pass1Fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateID"
+        android:layout_alignBaseline="@id/PassFill1"
+        android:text="@string/Newpass" />
+
+    <TextView
+        android:id="@+id/Pass2Fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Pass1Fill"
+        android:layout_alignBaseline="@id/PassFill2"
+        android:text="@string/ConfirmPasas" />
+
+    <EditText
+        android:id="@+id/PassFill1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SGusernameFill"
+        android:layout_toRightOf="@id/Pass2Fill"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/PassFill2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PassFill1"
+        android:layout_toRightOf="@id/Pass2Fill"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <view
+        android:id="@+id/SignupView"
+        class="edu.msu.cse476.cloudhatter.LogInView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/PassFill2" />
+
+    <Button
+        android:id="@+id/signingUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PassFill2"
+        android:layout_toRightOf="@id/Pass2Fill"
+        android:onClick="onSigningUp"
+        android:text="@string/SignUp" />
+
+    <Button
+        android:id="@+id/loginSG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PassFill2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/signingUpButton"
+        android:onClick="OnLogin"
+        android:text="@string/Login" />
+</RelativeLayout>
